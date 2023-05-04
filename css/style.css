@@ -1,0 +1,139 @@
+@import url (https://fonts.googleapis.com/css2?family=Bebas+Neue)
+/* Arquivo responsável pelos estilos */
+/* Aula 24/04/2023 - Estilos do Menu */
+body, ul {
+    margin: 0px;
+    padding: 0px;    
+}
+#menu a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    color: crimson;
+    font-size: 1.6em;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #0000007a;
+
+}
+#logo img:hover {
+    box-shadow: 4px 4px 6px #0000007a;
+    transition: 0.3s;
+
+}
+#logo img {
+    float: left;
+    height: 55px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+    box-sizing: border-box;
+    height: 75px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #71c0ee;
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+#carouselExampleInterval{
+    position: relative;
+    z-index: 10;
+    padding-top: 75px;
+    width: 100%;
+}
+#carouselExampleInterval img {
+    height: auto;
+    width: 100%;
+}
+/*CSS Estilo Banner */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    padding: 50px;
+    background-color: #e2cc00;    
+}
+.section-banner-home img {
+    height: 400px;
+    width: auto;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1{
+    font-size: 30px;
+    width: 60%;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    background-color:rgb(247, 4, 4);
+    padding: 4px 14px;
+    font-size: 15px;    
+}
+/* Fim css estilos Banner */
+
+/* Início css destaques */ 
+
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #303df4;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.destaque a:hover{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    transition:0.3s;
+    text-shadow: 4px 4px 6px rgb(250, 103, 103);
+
+}
+.destaque img {
+    height: 300px;
+}
