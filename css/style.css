@@ -1,4 +1,4 @@
-@import url (https://fonts.googleapis.com/css2?family=Bebas+Neue)
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
 /* Arquivo responsável pelos estilos */
 /* Aula 24/04/2023 - Estilos do Menu */
 body, ul {
@@ -53,6 +53,14 @@ body, ul {
 #btn-mobile {
     display: none;
 }
+.carousel-inner .carousel-item img{
+    width: 100%;
+    margin: auto;
+    max-height: 700px;
+    padding-top: 85px;
+}
+
+/*
 #carouselExampleInterval{
     position: relative;
     z-index: 10;
@@ -63,6 +71,8 @@ body, ul {
     height: auto;
     width: 100%;
 }
+/*
+
 /*CSS Estilo Banner */
 .section-banner-home {
     width: 100%;
