@@ -29,7 +29,7 @@ body, ul {
     height: 65px;
     position: relative;
     top: 0px;
-    left: 0px;
+    left: 250px;
 }
 #header {
     width: 100%;
@@ -41,7 +41,7 @@ body, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #71c0ee;
+    background: #ffffff;
 }
 #menu {
     display: flex;
