@@ -1,0 +1,181 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+    <script src="https://kit.fontawesome.com/30399317bb.js" crossorigin="anonymous"></script>
+    <title>..::Estética Automotiva::.. Entre em contato</title>
+</head>
+
+<body>
+    <!-- Aula 24/04/2023 - HTML -->
+    <!-- Início Menu Responsivo -->
+    <div class="conteudo-social">
+        <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+        <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+    </div>
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/Logo.png" alt="Logo Estetica"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="index.html">Home</a></li>
+                <li><a class="linkMenu" href="serviços.html">Serviços</a></li>
+                <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
+                <li><a class="linkMenu" href="contato.html">Contato</a></li>
+                <!-- Atalho para copiar conteúdo > Alt + Shift Seta para baixo -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim Menu Responsivo -->
+    <!-- Inicio Form contato -->
+    <div class="contato">
+        <div class="container">
+            <div class="row">                
+                <!-- Inicio formulario -->
+                <div class="col-md-6">
+                    <!-- Inicio da tag section com texto de contato -->
+                    <section class="col-12">
+                        <h2>Entre em contato conosco!</h2>
+                        <p>Para dúvidas, elogios ou reclamações entre em contato conosco!</p>
+                     </section>
+                <!-- Fim da tag section com texto de contato -->
+                    <div class="form_main">
+                      <form class="form-horizontal" method="post" action="">
+                        <fieldset>
+                          <h4>
+                            <legend class="text-left header">
+                              Preencha suas informações: <span></span>
+                            </legend>
+                          </h4>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="fname" name="name" type="text" placeholder="Insira seu primeiro nome"
+                                            class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="lname" name="name" type="text" placeholder="Insira seu último nome"
+                                            class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="email" name="email" type="email" placeholder="Insira seu E-mail"
+                                            class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="phone" name="phone" type="text" placeholder="Insira o número do seu telefone"
+                                            class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <textarea id="message" name="message" type="text" placeholder="Insira sua mensagem que retornaremos em até 2 dias úteis"
+                                            class="form-control" rows="7" required<></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="formbutton">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <!-- Fim formulario -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <section id="text-local" class="text-center header">
+                            <h2>Onde estamos localizados</h2>
+                            <h4>Endereço:</h4>
+                            <p> Avenida do Prado, 123 <br>
+                                Centro, São Paulo - SP - CEP: 12345-000
+                            </p>
+                            </section>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14637.110026353093!2d-47.448846!3d-23.486512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a9f61b55945%3A0x4ead928c70b1e690!2sEscola%20e%20Faculdade%20de%20Tecnologia%20SENAI%20Gaspar%20Ricardo%20J%C3%BAnior!5e0!3m2!1spt-BR!2sbr!4v1684972108114!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim maps -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Inicio Whatsapp -->
+    <div class="whatsapp">
+        <div class="container-grid logo-whats">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5515998354037&text=Ol%C3%A1,%20vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img src="./img/redes_sociais/whats.png" class="pulse" alt="Contato Whats"></a>
+        </div>
+    </div>
+    <!-- Fim Whatsapp -->
+    <!-- Início Footer -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row m-0">
+                <!-- Inicio Logo -->
+                <div class="col-md-4">
+                    <figure>
+                        <img id="img-logo" src="./img/Logo.png" alt="logo_rodape">
+                    </figure>
+                </div>
+                <!-- Fim logo-->
+                <!-- Inicio texto rodape -->
+                <div class="col-md-4">
+                    <div class="info-contato">
+                        <p>E-mail:</p>
+                        <p>lucas.alexander2011@hotmail.com</p><br>
+                        <p>Endereço:</p>
+                        <p>Avenida do Prado, 123</p>
+                        <p>Telefone:</p>
+                        <p>+55 (15) 99835-4037</p>
+                    </div>
+                </div>
+                <!-- Fim texto rodape -->
+                <!-- Inicio midia sociais -->
+                <div class="col-md-4">
+                    <figure class="redes-sociais">
+                        <a href="#"><img src="./img/redes_sociais/face.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais//insta.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/youtube.png" alt=""></a>
+                    </figure>
+                    <br>
+                    <a class="link_rodape" href="index.html">Home</a>
+                    <a class="link_rodape" href="serviços.html">Serviços</a>
+                    <a class="link_rodape" href="streaming.html">Streaming</a>
+                    <a class="link_rodape" href="contato.html">Contato</a>
+                </div>
+                <!-- Fim midias sociais -->
+                <!-- Inicio dos direitos autorais -->
+                <div class="col-12">
+                    <p class="direitos">© 2023 L.A.Detailer. Todos os direitos reservados. L.A.Detailer MEI.</p>
+                </div>
+                <!-- Fim dos direitos autorais -->
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
+</body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/menu.js"></script>
+
+</html>
