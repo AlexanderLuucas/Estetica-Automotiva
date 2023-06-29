@@ -410,8 +410,13 @@ body, ul {
 
 /* Início CSS Contato */
 .contato {
-    margin-top: 50px;
-
+    margin-top: 200px;
+    background-image: url(../img/fundo_contato1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #ffffff;
 }
 .form_main {
     width: 100%;
@@ -428,6 +433,7 @@ body, ul {
     border-bottom: 1px solid #a3aff0;
     padding-bottom: 9px;
     position: relative;
+    font-weight: bold;
 }
 #text-local {
     border-bottom: 1px solid #a3aff0;
