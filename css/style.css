@@ -66,7 +66,26 @@ body, ul {
     justify-content: space-between;
     background: #ffffff;
     top: 47px;
+    padding-right: 200px;
 }
+.botao {
+    background-color: #bd9a00;
+    height: 45px;
+    width: 200px;
+    text-align: justify;
+    line-height: 25px;
+    /*font-size: 1.5em !important;*/
+    border: solid 1px #080324;
+    border-radius: 30px 10px;
+}
+.botao:hover {
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+  }
 #menu {
     display: flex;
     list-style: none;
@@ -77,39 +96,55 @@ body, ul {
 }
 /*CSS Estilo Banner */
 .section-banner-home {
-    width: 130%;
-    height: 500px;
+    height: 800px;
     margin-top: 150px;
     padding: 50px;
-    background-color: #ffffff;    
+    background-image: url(../img/fundo_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #ffffff;
 }
 .section-banner-home img {
     height: 400px;
     width: auto;
 }
 .section-banner-home .texto-banner {
-    margin-top: 30px;
-    font-size: 22px;
+    margin-top: 200px;
+    z-index: 12;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
 }
 .section-banner-home .texto-banner h1{
-    font-size: 30px;
-    width: 40%;
-    padding-bottom: 20px;
-    color: #000000da;
+    font-size: 50px;
+    width: 50%;
+    padding-bottom: 30px;
+    color: #f8f8f8da;
     text-shadow: 2px 2px 4px #0000007a;
     text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    margin: 0 25%;
 }
-.section-banner-home .texto-banner p {
+/* .section-banner-home .texto-banner p { 
     font-size: 15px;
     margin-bottom: 20px;
     width: 40%;
-}
+}*/
 .section-banner-home .texto-banner a {
     color: rgb(245, 245, 245);
-    text-decoration: none;
+    text-decoration: line;
     background-color:rgb(247, 4, 4);
     padding: 8px 8px;
     font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    margin: 0 40%;
+    width: 17%;
 }
 /* Fim css estilos Banner */
 .carousel-inner .carousel-item img{
@@ -195,6 +230,7 @@ body, ul {
         transform: rotate(-135deg);
         top: -7px;
     }
+    
 }
 
 
@@ -411,7 +447,7 @@ body, ul {
 /* Início CSS Contato */
 .contato {
     margin-top: 200px;
-    background-image: url(../img/fundo_contato1.jpg);
+    background-image: url(../img/opçao\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
