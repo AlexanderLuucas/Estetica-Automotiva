@@ -11,6 +11,7 @@
 
 <!-- Acertar logo
      barra direitos autorais -->
+
 <body>
     <!-- Aula 24/04/2023 - HTML -->
     <!-- Início Menu Responsivo -->
@@ -39,44 +40,47 @@
     <!-- Inicio Form contato -->
     <div class="contato">
         <div class="container">
-            <div class="row">                
-                <!-- Inicio Maps -->
-        <div class="col-md-6">
             <div class="row">
-                <div class="panel panel-default">
-                    <section id="text-local" class="text-center header">
-                    <h2>Onde estamos localizados</h2>
-                    <h4>Endereço:</h4>
-                    <p> Avenida do Prado, 123 <br>
-                        Centro, São Paulo - SP - CEP: 12345-000
-                    </p>
-                    </section>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14637.110026353093!2d-47.448846!3d-23.486512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a9f61b55945%3A0x4ead928c70b1e690!2sEscola%20e%20Faculdade%20de%20Tecnologia%20SENAI%20Gaspar%20Ricardo%20J%C3%BAnior!5e0!3m2!1spt-BR!2sbr!4v1684972108114!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Inicio Maps -->
+                <div class="col-md-6 conteudo-local">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <section id="text-local" class="text-center header">
+                                <h2>Onde estamos localizados</h2>
+                                <h4>Endereço:</h4>
+                                <p> Avenida do Prado, 123 <br>
+                                    Centro, São Paulo - SP - CEP: 12345-000
+                                </p>
+                            </section>
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14637.110026353093!2d-47.448846!3d-23.486512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a9f61b55945%3A0x4ead928c70b1e690!2sEscola%20e%20Faculdade%20de%20Tecnologia%20SENAI%20Gaspar%20Ricardo%20J%C3%BAnior!5e0!3m2!1spt-BR!2sbr!4v1684972108114!5m2!1spt-BR!2sbr"
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
-
-            </div>
-
-        </div>
-        <!-- Fim maps -->
-                <div class="col-md-6">
+                <!-- Fim maps -->
+                <div class="col-md-6 conteudo-form">
                     <!-- Inicio da tag section com texto de contato -->
                     <section class="col-12">
                         <h2>Pintou uma dúvida? Manda pra gente!</h2>
                         <p>Preencha o formulario abaixo que entraremos em contato o mais breve possivel.</p>
-                     </section>
-                <!-- Fim da tag section com texto de contato -->
+                    </section>
+                    <!-- Fim da tag section com texto de contato -->
                     <div class="form_main">
-                      <form class="form-horizontal" method="post" action="">
-                        <fieldset>
-                          <h4>
-                            <legend class="text-left header">
-                              Preencha suas informações: <span></span>
-                            </legend>
-                          </h4>
+                        <form class="form-horizontal" method="post" action="">
+                            <fieldset>
+                                <h4>
+                                    <legend class="text-left header">
+                                        Preencha suas informações: <span></span>
+                                    </legend>
+                                </h4>
                                 <div class="form-group">
                                     <div class="col-md-10 col-md-offset-1">
                                         <input id="fname" name="name" type="text" placeholder="Insira seu primeiro nome"
@@ -97,14 +101,15 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-10 col-md-offset-1">
-                                        <input id="phone" name="phone" type="text" placeholder="Insira o número do seu Whastapp"
-                                            class="form-control" required>
+                                        <input id="phone" name="phone" type="text"
+                                            placeholder="Insira o número do seu Whastapp" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-10 col-md-offset-1">
-                                        <textarea id="message" name="message" type="text" placeholder="Insira sua mensagem"
-                                            class="form-control" rows="7" required<></textarea>
+                                        <textarea id="message" name="message" type="text"
+                                            placeholder="Insira sua mensagem" class="form-control" rows="7"
+                                            required<></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -117,15 +122,17 @@
                     </div>
                 </div>
                 <!-- Fim formulario -->
-                
+
             </div>
         </div>
-        
+
     </div>
     <!-- Inicio Whatsapp -->
     <div class="whatsapp">
         <div class="container-grid logo-whats">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=5515998354037&text=Ol%C3%A1,%20vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img src="./img/redes_sociais/whats.png" class="pulse" alt="Contato Whats"></a>
+            <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=5515998354037&text=Ol%C3%A1,%20vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img
+                    src="./img/redes_sociais/whats.png" class="pulse" alt="Contato Whats"></a>
         </div>
     </div>
     <!-- Fim Whatsapp -->
