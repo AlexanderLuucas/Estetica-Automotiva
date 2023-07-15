@@ -77,6 +77,9 @@ body, ul {
     border: solid 1px #080324;
     border-radius: 30px 10px;
     color: #000 !important;
+    margin: -10px;
+    justify-content: center;
+    align-items: center;
 }
 .botao:hover {
     font-size: 1.4em !important;
@@ -99,7 +102,6 @@ body, ul {
 /*CSS Estilo Banner */
 .section-banner-home {
     height: 800px;
-    margin-top: 150px;
     padding: 50px;
     background-image: url(../img/apresentação.jpg);
     background-repeat: no-repeat;
@@ -284,7 +286,7 @@ body, ul {
     color: #bd9a00;
     font-size: 25px;
     font-weight: bold;
-    margin: 30px 0;
+    /* margin: 30px 0;  */
 }
 .destaque a:hover{
     color: #b7a244;
@@ -295,7 +297,8 @@ body, ul {
 }
 .destaque img {
     height: 300px;
-    width: 400px;
+    max-width: 100%;
+    margin: 14px auto 40px;
 }
 /* Fim CSS Destaque */
 
@@ -319,6 +322,7 @@ body, ul {
 .galeria .container{
     margin-left: 14.5%;
     background-color: #000;
+    margin-bottom: 40px;
 }
 
 .galeria h2 {
@@ -350,8 +354,8 @@ body, ul {
 }
 .galeria .container img:hover {
     -webkit-transform: scale(1.3); 
-    transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0 0, 0, 0.05);
+    transform: scale(1.3);
+    box-shadow: 0 0 15px #7c7c7c;
 }
 /* Fim CSS Galeria */
 /* Início CSS Duvidas */
@@ -389,7 +393,7 @@ body, ul {
 /* Inicio CSS Footer*/
 
 .rodape {
-    padding: 50px 50px 0;
+    padding: 25px 50px 25px;
     background-color: #000;
 }
 .rodape .container img {
@@ -420,16 +424,16 @@ body, ul {
     width: 50px;
     height: 40px;
 }
-.col-12 .direitos {
+.direito_autoral .direitos {
     height: 47px;
     width: 100%;
-    display: block;
+    display: flex;
     background-color: #bd9a00;
     position: relative;
     z-index: 50;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     color: #ffffff;
 }
 /* Fim CSS Footer*/
@@ -440,7 +444,6 @@ body, ul {
     padding-bottom: 0;
     height: auto;
     max-width: 100%;
-    margin-top: 150px;
     margin-bottom: 0px;
     padding-top: 50px;
     padding-left: 30px;
@@ -532,18 +535,19 @@ body, ul {
         }
 }
 /* Fim Whatsapp */
-/* Início CSS Card Serviços */
 
-.text-center {
-    margin-top: 0px;
+/* Início CSS Card Serviços */
+.text-center-serviços {
+    margin-top: 30px;
     margin-left: 3%;
     margin-right: 3%;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     display: flex;
     position: relative;
+    background-color: #000;
 }
 
-.text-center .mb-5 {
+.text-center-serviços .mb-5 {
     margin-top: 20px;
     text-align: center;
     font-size: 30px;
@@ -551,7 +555,7 @@ body, ul {
     text-shadow: 2px 2px 4px #838383; 
     color: #bd9a00;    
 }
-.text-center .mb-5 .row .col-lg-4{
+.text-center-serviços .mb-5 .row .col-lg-4{
     display: flex;
     position: relative;
 }
@@ -566,8 +570,6 @@ body, ul {
     background-size: cover;
     background-position: 50%;   
 }
-
-
 .mask {
     display: flex;
     position: relative;
@@ -585,24 +587,24 @@ body, ul {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-
 .hover-overlay .mask:hover {
     opacity: 1;
 }
-
 .card-body  {
     background-color: #ffffff;
     color: rgb(202, 0, 0);
     font-size: 20px;
     border: none;
-    height: 300px;
+    height: 330px;
     width: auto;
+    
 }
 .card-body h5 {
     font-size: 25px;
     font-weight: bold;
     color: #bd9a00;
     text-shadow: 2px 2px 4px #838383;
+    text-align: center;
 }
 .card-body p {
     font-size: 20px;
@@ -616,9 +618,11 @@ body, ul {
     font-weight: 400;
     border: none;
     outline: 0px solid transparent;
+    text-align: center;
+    
 }
-
 /* Fim CSS Card Produtos */
+
 /* Início CSS Contato */
 .contato {
     margin-top: 0px;
@@ -641,9 +645,6 @@ body, ul {
     text-transform: uppercase;
     text-shadow: 2px 2px 4px #626262;
 }
-/* .col-12 h2 {
-    text-shadow: 2px 2px 4px #434343;
-} */
 .text-left {
     border-bottom: 1px solid #a3aff0;
     padding-bottom: 9px;
@@ -716,6 +717,7 @@ body, ul {
     transition: all 0.5s ease 0s;
 }
 /* Fim CSS Contato */
+
 /* Início CSS Mapa */
 .map{
     width: 100%;
@@ -725,6 +727,33 @@ body, ul {
     width: 100%;
     height: 100%;
 }
-
-
 /* Fim CSS Mapa */
+
+/* Início CSS Detalhe */
+
+.detalhe .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.detalhe h2 {
+    color: #000;
+}
+
+.detalhe p {
+    color: rgb(0, 0, 0);
+}
+
+.detalhe a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: none;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+}
+
+.detalhe img {
+    height: 200px;
+}
+/* Fim CSS detalhe */
