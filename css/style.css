@@ -1,11 +1,14 @@
     @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
 /* Arquivo responsável pelos estilos */
 /* Aula 24/04/2023 - Estilos do Menu */
+
+
 body, ul {
-    margin: 0px;
+    margin: 0px !important;
     padding: 5px;
+    background-color:#000 !important;
 }
-#menu a {
+#menu .linkMenu {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +18,7 @@ body, ul {
     font-weight: bold;
     padding-left: 25px;
     }
-#menu a:hover {
+#menu .linkMenu:hover {
     color: #bd9a00;
     font-size: 1.6em;
     transition: 0.3s;
@@ -47,6 +50,9 @@ body, ul {
    align-items: center;
    padding-right: 5.0em;
 }
+.conteudo-social a:hover {
+    color:#000;
+}
 .conteudo-social a {
    color: white;
    text-decoration: none;
@@ -71,15 +77,19 @@ body, ul {
     background-color: #bd9a00;
     height: 45px;
     width: 200px;
-    text-align: justify;
-    line-height: 25px;
-    /*font-size: 25px !important;*/
     border: solid 1px #080324;
     border-radius: 30px 10px;
     color: #000 !important;
-    margin: -10px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-left: 1em;
+    display: flex;
 }
 .botao:hover {
     font-size: 1.4em !important;
@@ -95,6 +105,7 @@ body, ul {
     display: flex;
     list-style: none;
     gap: 0.5rem;
+    align-items: center;
 }
 #btn-mobile {
     display: none;
@@ -222,6 +233,7 @@ body, ul {
         color: #ffffff; /* cor hamburger */
         box-shadow: 4px 4px 6px #bd9a00;
         transition: 0.3s;
+        margin-left: 130px;
     }
     #hamburger::after,
     #hamburger::before {
@@ -245,11 +257,6 @@ body, ul {
         top: -7px;
     }
     
-}
-
-
-.card {
-    background-color: #000;
 }
 
 /* Início css destaques */ 
@@ -590,15 +597,23 @@ body, ul {
 .hover-overlay .mask:hover {
     opacity: 1;
 }
+.card {
+    background-color: #000;
+    margin-bottom: 20px;
+}
 .card-body  {
-    background-color: #ffffff;
+    background-color: #5f5f5f;
     color: rgb(202, 0, 0);
     font-size: 20px;
     border: none;
-    height: 330px;
+    height: 350px;
     width: auto;
-    
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
 .card-body h5 {
     font-size: 25px;
     font-weight: bold;
@@ -606,20 +621,29 @@ body, ul {
     text-shadow: 2px 2px 4px #838383;
     text-align: center;
 }
-.card-body p {
+.card-text  {
     font-size: 20px;
     font-weight: normal;
-    color: #000000;
+    color: #ffffff;
     margin-top: 20px;
+    text-align: justify;
 }
 .card-body .btn {
-    background-color: #ababab;
-    color: white;
-    font-weight: 400;
+    background-color: #bd9a00;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
     border: none;
     outline: 0px solid transparent;
-    text-align: center;
-    
+    align-items: center;
+    justify-content: center;
+    display: block;
+    box-shadow: 2px 2px 4px #c5c5c5;
+}
+.card-body .btn:hover{
+    background-color: #b7a244;
+    color: #ffffff;
+    box-shadow: 2px 2px 4px #ffffff;
+    transition: 0.3s ;
 }
 /* Fim CSS Card Produtos */
 
@@ -729,7 +753,7 @@ body, ul {
 }
 /* Fim CSS Mapa */
 
-/* Início CSS Detalhe */
+/* Início CSS detalhe higienização */
 
 .detalhe .text-body {
     width: 80%;
@@ -737,11 +761,11 @@ body, ul {
 }
 
 .detalhe h2 {
-    color: #000;
+    color: #ffffff;
 }
 
 .detalhe p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .detalhe a {
@@ -755,5 +779,6 @@ body, ul {
 
 .detalhe img {
     height: 200px;
+    position: initial;
 }
 /* Fim CSS detalhe */
